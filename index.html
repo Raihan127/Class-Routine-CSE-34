@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSE 34'th Class Routine</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: linear-gradient(135deg, #d4e9ff, #ffffff);
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #333;
+            margin-top: 50px;
+        }
+ h4 {
+            color: #333;
+            margin-top: 0px;
+        }
+        .section-button {
+            padding: 15px 30px;
+            margin: 15px;
+            border: none;
+            border-radius: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 10px 12px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .section-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        #btn-A { background-color: #FF6B6B; color: white; padding: 15px 32px; }
+        #btn-B { background-color: #FF9F1C; color: white; padding: 15px 32px; }
+        #btn-C { background-color: #4682B4; color: white; padding: 15px 32px; }
+        #btn-D { background-color: #1A535C; color: white; padding: 15px 32px; }
+        #btn-E { background-color: #008B8B; color: white; padding: 15px 32px; }
+
+        #selected-section {
+            margin-top: 30px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .visit-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .visit-link:hover {
+            background-color: #555;
+            transform: scale(1.05);
+        }
+
+        footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #888;
+}
+ .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .social-icons a img {
+            width: 30px;
+            height: 30px;
+            transition: transform 0.3s;
+        }
+
+        .social-icons a img:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <h1>Class Routine</h1>
+    <h4>Computer Science and Engineering</h4> 
+
+    <button id="btn-A" class="section-button" onclick="window.location.href='https://raihan127.github.io/A-Class-Routine/'">Section A</button>
+    <button id="btn-B" class="section-button" onclick="window.location.href='https://raihan127.github.io/B-Class-Routine/'">Section B</button>
+    <button id="btn-C" class="section-button" onclick="window.location.href='https://raihan127.github.io/C-Class-Routine/'">Section C</button>
+    <button id="btn-D" class="section-button" onclick="window.location.href='https://raihan127.github.io/class-routine/'">Section D</button>
+    <button id="btn-E" class="section-button" onclick="window.location.href='https://raihan127.github.io/E-Class_Routine/'">Section E</button>
+
+    <div id="selected-section"></div>
+
+    <script>
+    
+        const githubLinks = {
+            'A': 'https://github.com/yourusername/section-a',
+            'B': 'https://github.com/yourusername/section-b',
+            'C': 'https://github.com/yourusername/section-c',
+            'D': 'https://github.com/yourusername/section-d',
+            'E': 'https://github.com/yourusername/section-e'
+        };
+
+        // সিলেক্টেড সেকশন
+        function showSection(section) {
+            const sectionDiv = document.getElementById('selected-section');
+            const link = githubLinks[section];
+
+            sectionDiv.innerHTML = `
+                You selected <span style="color: green;">Section ${section}</span><br>
+                <a href="${link}" target="_blank" class="visit-link">Visit GitHub Repository</a>
+            `;
+        }
+    </script>
+
+   <footer>
+   <div class="social-icons">
+<!-- Facebook -->
+<a href="https://www.facebook.com/tj.raihan.7" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" style="filter: grayscale(100%);">
+</a>
+<!-- Instagram -->
+<a href="https://www.instagram.com" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="filter: grayscale(100%);">
+</a>
+<!-- Telegram -->
+<a href="https://t.me" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/Telegram_logo_icon.svg" alt="Telegram" style="filter: grayscale(100%);">
+</a>
+<!-- Messenger -->
+<a href="https://m.me/tj.raihan.7" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/b/be/Facebook_Messenger_logo_2020.svg" alt="Messenger" style="filter: grayscale(100%);">
+</a>
+<!-- WhatsApp -->
+ <a href="https://wa.me/+8801785598023" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/2062095_application_chat_communication_logo_whatsapp_icon.svg" alt="WhatsApp" style="filter: grayscale(100%);">
+    </a>
+</div>
+<p>&copy; 2025 Abu Raihan. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
